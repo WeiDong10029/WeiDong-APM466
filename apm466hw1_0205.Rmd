@@ -1,0 +1,781 @@
+---
+title: "Apm466hw1"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.85,comp.freq=Inf,redemption_value = 100) 
+bond.yields(settle="2020-01-03", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2020-3-1", coupon=1.5e-2,freq=2, price=99.86,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.26,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.27,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.27,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.28,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2020-9-1", coupon=0.75e-2,freq=2, price=99.31,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.89,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.93,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.95,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.94,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.92,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.92,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.88,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.90,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.90,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2021-3-1", coupon=0.75e-2,freq=2, price=98.93,comp.freq=Inf,redemption_value = 100)
+```
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.41,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.45,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.49,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.46,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.46,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.43,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.43,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.38,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.41,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2021-9-1", coupon=0.75e-2,freq=2, price=98.42,comp.freq=Inf,redemption_value = 100)
+```
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.57,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.63,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.66,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.65,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.64,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.60,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.61,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.57,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.58,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2022-3-1", coupon=0.5e-2,freq=2, price=97.61,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.53,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.59,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.62,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.59,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.58,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.52,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.46,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.47,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.51,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2022-6-1", coupon=2.75e-2,freq=2, price=102.51,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.31,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.42,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.48,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.45,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.44,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.35,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.31,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.27,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.31,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2023-3-1", coupon=1.75e-2,freq=2, price=100.38,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.48,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.59,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.65,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.61,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.62,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.54,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.53,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.44,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.49,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2023-6-1", coupon=1.5e-2,freq=2, price=99.56,comp.freq=Inf,redemption_value = 100)
+```
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.52,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.65,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.75,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.58,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.68,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.53,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.47,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.46,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.54,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2024-3-1", coupon=2.25e-2,freq=2, price=102.64,comp.freq=Inf,redemption_value = 100)
+```
+```{r}
+library(jrvFinance)
+bond.yields(settle="2020-01-02", mature="2024-9-1", coupon=1.5e-2,freq=2, price=98.72,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-03", mature="2024-9-1", coupon=1.5e-2,freq=2, price=98.95,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-06", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.29,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-07", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.11,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-08", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.25,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-09", mature="2024-9-1", coupon=1.5e-2,freq=2, price=98.99,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-10", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.03,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-13", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.06,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-14", mature="2024-9-1", coupon=1.5e-2,freq=2, price=98.99,comp.freq=Inf,redemption_value = 100)
+bond.yields(settle="2020-01-15", mature="2024-9-1", coupon=1.5e-2,freq=2, price=99.10,comp.freq=Inf,redemption_value = 100)
+```
+
+```{r}
+timetomature <- data.frame(date=c("2020/03/01","2020/09/01","2021/03/01","2021/09/01","2022/03/01","2022/06/01","2023/03/01","2023/06/01","2024/03/01","2024/09/01"),tx_start=c("2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02","2020/01/02"))
+
+timetomature$date_diff <- as.Date(as.character(timetomature$date), format="%Y/%m/%d")-
+                  as.Date(as.character(timetomature$tx_start), format="%Y/%m/%d")
+timetomature
+      
+```
+
+```{r}
+timetomature_0102<-timetomature$date_diff/365
+timetomature_0102
+```
+
+```{r}
+plot(type = "l", timetomature$date_diff/365, c(0.0240673,0.01867487,0.01709712,0.0171587,0.01640878,0.01668843,0.0164202,0.01650335,0.01614895,0.01779154 ), ylab = "yield", xlab = "time/year", ylim = c(0.015, 0.027),col=1,main = "yield rate")
+
+lines(type = "l", (timetomature$date_diff-1)/365,c(0.02360272, 0.01841697, 0.01677094, 0.0169291, 0.01613774, 0.01642764, 0.01606464, 0.01617349, 0.0158281, 0.01727821),col=2)
+
+lines(type = "l", (timetomature$date_diff-4)/365,c(0.02407196,0.01855629,	0.01666209,	0.01672966,	0.01603737,	0.01626608,	0.01586739,	0.01599547,	0.01557167,	0.01652193),col=3)
+
+lines(type = "l", (timetomature$date_diff-5)/365,c(0.02424001,	0.01875854,	0.01677226,	0.01693055,	0.01609939,	0.01637856,	0.01596306,	0.01611693,	0.01598249,	0.0169253),col=4)
+
+lines(type = "l", (timetomature$date_diff-6)/365,c(0.02441442,	0.01865118,	0.0169713,	0.0169464, 0.01616158,	0.01640792,	0.01599419,	0.01608765,	0.01573399,	0.0166132),col=5)
+
+lines(type = "l", (timetomature$date_diff-7)/365,c(0.02459557,	0.01869923,	0.01699425,	0.0171484,	0.01636784,	0.01664616,	0.01628463,	0.01633034,	0.01609676,	0.01719664),col=6)
+
+lines(type = "l", (timetomature$date_diff-8)/365,c(0.02478384,	0.01874771,	0.01737237,	0.01716467,	0.01633449,	0.01688507,	0.01641349,	0.01636168,	0.01623981,	0.0171082),col=7)
+
+lines(type = "l", (timetomature$date_diff-11)/365,c(0.02539588,	0.01905478,	0.01726601,	0.01752619, 0.0165715,	0.01680759,	0.01654117,	0.01663817,	0.01625265,	0.0170446),col=8) 
+
+lines(type = "l", (timetomature$date_diff-12)/365,c(0.02561731,	0.0189459,	0.01728997, 0.01735545,	0.01653823,	0.01662758,	0.01641012,	0.01648759,	0.01605218,	0.01720326),col=9) 
+
+lines(type = "l", (timetomature$date_diff-13)/365,c(0.02584839,	0.01851519,	0.01704453,	0.01730954,	0.01640818,	0.01661543,	0.01618115,	0.01627608,	0.01580251,	0.01695711),col=10) 
+
+legend(3,0.027,legend = c("Jan02","Jan03","Jan06","Jan07","Jan08","Jan09","Jan10","Jan13","Jan14","Jan15"), col=1:10, lty = 1:10)
+
+```
+
+```{r}
+r1 <- 0.0240673
+r2 <- 0.01867487
+r3 <- 0.01709712
+r4 <- 0.0171587
+r5 <- 0.01640878
+r6 <- 0.01668843
+r7 <- 0.0164202
+r8 <- 0.01650335
+r9 <- 0.01614895
+r10 <- 0.01779154
+t1 <- 59
+t2 <- 243
+t3 <- 424
+t4 <- 608
+t5 <- 789
+t6 <- 881
+t7 <- 1154
+t8 <-1246
+t9 <- 1520
+t10 <- 1704
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0102 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0102
+```
+```{r}
+r1 <- 0.02360272
+r2 <- 0.01841697
+r3 <- 0.01677094
+r4 <- 0.0169291
+r5 <- 0.01613774
+r6 <- 0.01642764
+r7 <- 0.01606464
+r8 <- 0.01617349
+r9 <- 0.0158281
+r10 <- 0.01727821
+t1 <- 58
+t2 <- 242
+t3 <- 423
+t4 <- 607
+t5 <- 788
+t6 <- 880
+t7 <- 1153
+t8 <-1245
+t9 <- 1519
+t10 <- 1703
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0103 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0103
+```
+
+```{r}
+r1 <- 0.02407196
+r2 <- 0.01855629
+r3 <- 0.01666209
+r4 <- 0.01672966
+r5 <- 0.01603737
+r6 <- 0.01626608
+r7 <- 0.01586739
+r8 <- 0.01599547
+r9 <- 0.01557167
+r10 <- 0.01652193
+t1 <- 55
+t2 <- 239
+t3 <- 420
+t4 <- 604
+t5 <- 785
+t6 <- 877
+t7 <- 1150
+t8 <-1242
+t9 <- 1516
+t10 <- 1700
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0106 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0106
+```
+```{r}
+r1 <- 0.02424001
+r2 <- 0.01875854
+r3 <- 0.01677226
+r4 <- 0.01693055
+r5 <- 0.01609939
+r6 <- 0.01637856
+r7 <- 0.01596306
+r8 <- 0.01611693
+r9 <- 0.01598249
+r10 <- 0.0169253
+t1 <- 54
+t2 <- 238
+t3 <- 419
+t4 <- 603
+t5 <- 784
+t6 <- 876
+t7 <- 1149
+t8 <-1242
+t9 <- 1515
+t10 <- 1699
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0107 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0107
+```
+```{r}
+r1 <- 0.02441442
+r2 <- 0.01865118
+r3 <- 0.0169713
+r4 <- 0.0169464
+r5 <- 0.01616158
+r6 <- 0.01640792
+r7 <- 0.01599419
+r8 <- 0.01608765
+r9 <- 0.01573399
+r10 <- 0.0166132
+t1 <- 53
+t2 <- 237
+t3 <- 418
+t4 <- 602
+t5 <- 783
+t6 <- 875
+t7 <- 1148
+t8 <-1241
+t9 <- 1514
+t10 <- 1698
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0108 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0108
+```
+```{r}
+r1 <- 0.02459557
+r2 <- 0.01869923
+r3 <- 0.01699425
+r4 <- 0.0171484
+r5 <- 0.01636784
+r6 <- 0.01664616
+r7 <- 0.01628463
+r8 <- 0.01633034
+r9 <- 0.01609676
+r10 <- 0.01719664
+t1 <- 52
+t2 <- 236
+t3 <- 417
+t4 <- 601
+t5 <- 782
+t6 <- 874
+t7 <- 1147
+t8 <-1240
+t9 <- 1513
+t10 <- 1697
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0109 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0109
+```
+```{r}
+r1 <- 0.02478384
+r2 <- 0.01874771
+r3 <- 0.01737237
+r4 <- 0.01716467
+r5 <- 0.01633449
+r6 <- 0.01688507
+r7 <- 0.01641349
+r8 <- 0.01636168
+r9 <- 0.01623981
+r10 <- 0.0171082
+t1 <- 51
+t2 <- 235
+t3 <- 416
+t4 <- 600
+t5 <- 781
+t6 <- 873
+t7 <- 1146
+t8 <-1239
+t9 <- 1512
+t10 <- 1696
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0110 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0110
+```
+```{r}
+r1 <- 0.02539588
+r2 <- 0.01905478
+r3 <- 0.01726601
+r4 <- 0.01752619
+r5 <- 0.0165715
+r6 <- 0.01680759
+r7 <- 0.01654117
+r8 <- 0.01663817
+r9 <- 0.01625265
+r10 <- 0.0170446
+t1 <- 48
+t2 <- 232
+t3 <- 413
+t4 <- 597
+t5 <- 778
+t6 <- 870
+t7 <- 1143
+t8 <-1236
+t9 <- 1509
+t10 <- 1693
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0113 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0113
+```
+
+```{r}
+r1 <- 0.02561731
+r2 <- 0.0189459
+r3 <- 0.01728997
+r4 <- 0.01735545
+r5 <- 0.01653823
+r6 <- 0.01662758
+r7 <- 0.01641012
+r8 <- 0.01648759
+r9 <- 0.01605218
+r10 <- 0.01720326
+t1 <- 47
+t2 <- 231
+t3 <- 412
+t4 <- 596
+t5 <- 777
+t6 <- 869
+t7 <- 1142
+t8 <-1235
+t9 <- 1508
+t10 <- 1692
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0114 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0114
+```
+
+```{r}
+r1 <- 0.02584839
+r2 <- 0.01851519
+r3 <- 0.01704453
+r4 <- 0.01730954
+r5 <- 0.01640818
+r6 <- 0.01661543
+r7 <- 0.01618115
+r8 <- 0.01627608
+r9 <- 0.01580251
+r10 <- 0.01695711
+t1 <- 46
+t2 <- 230
+t3 <- 411
+t4 <- 595
+t5 <- 776
+t6 <- 868
+t7 <- 1141
+t8 <-1234
+t9 <- 1507
+t10 <- 1691
+
+y1 <- r1
+y2 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r2)+(100+0.75*0.5)/exp(t2/365*r2)-0.75*0.5/exp((t1/365)*y1)))/(t2/365)
+y3 <- log((100+0.75*0.5)/(0.75*0.5/exp((t1/365)*r3)+0.75*0.5/exp((t2/365)*r3)+(100+0.75*0.5)/(exp((t3/365)*r3))-0.75*0.5/exp((t1/365)*y1)-0.75*0.5/exp((t2/365)*y2)))/(t3/365)
+y4 <- log(100.375/(0.375/exp(t1/365*r4)+0.375/exp(t2/365*r4)+0.375/exp(t3/365*r4)+100.375/exp(t4/365*r4)-0.375/exp(t1/365*y1)-0.375/exp(t2/365*y2)-0.375/exp(t3/365*y3)))/(t4/365)
+y5 <- log(100.25/(0.25/exp(t1/365*r5)+0.25/exp(t2/365*r5)+0.25/exp(t3/365*r5)+0.25/exp(t4/365*r5)+100.25/exp(t5/365*r5)-0.25/exp(t1/365*y1)-0.25/exp(t2/365*y2)-0.25/exp(t3/365*y3)-0.25/exp(t4/365*y4)))/(t5/365)
+y6 <- log(101.375/(1.375/exp(t1/365*r6)+1.375/exp(t2/365*r6)+1.375/exp(t3/365*r6)+1.375/exp(t4/365*r6)+1.375/exp(t5/365*r6)+101.375/exp(t6/365*r6)-1.375/exp(t1/365*y1)-1.375/exp(t2/365*y2)-1.375/exp(t3/365*y3)-1.375/exp(t4/365*y4)-1.375/exp(t5/365*y5)))/(t6/365)
+y7 <- log(100.875/(0.875/exp(t1/365*r7)+0.875/exp(t2/365*r7)+0.875/exp(t3/365*r7)+0.875/exp(t4/365*r7)+0.875/exp(t5/365*r7)+0.875/exp(t6/365*r7)+100.875/exp(t7/365*r7)-0.875/exp(t1/365*y1)-0.875/exp(t2/365*y2)-0.875/exp(t3/365*y3)-0.875/exp(t4/365*y4)-0.875/exp(t5/365*y5)-0.875/exp(t6/365*y6)))/(t7/365)
+y8 <- log(100.75/(0.75/exp(t1/365*r8)+0.75/exp(t2/365*r8)+0.75/exp(t3/365*r8)+0.75/exp(t4/365*r8)+0.75/exp(t5/365*r8)+0.75/exp(t6/365*r8)+0.75/exp(t7/365*r8)+100.75/exp(t8/365*r8)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y2)-0.75/exp(t3/365*y3)-0.75/exp(t4/365*y4)-0.75/exp(t5/365*y5)-0.75/exp(t6/365*y6)-0.75/exp(t7/365*y7)))/(t8/365)
+y9 <- log(101.125/(1.125/exp(t1/365*r9)+1.125/exp(t2/365*r9)+1.125/exp(t3/365*r9)+1.125/exp(t4/365*r9)+1.125/exp(t5/365*r9)+1.125/exp(t6/365*r9)+1.125/exp(t7/365*r9)+1.125/exp(t8/365*r9)+101.125/exp(t9/365*r9)-1.125/exp(t1/365*y1)-1.125/exp(t2/365*y2)-1.125/exp(t3/365*y3)-1.125/exp(t4/365*y4)-1.125/exp(t5/365*y5)-1.125/exp(t6/365*y6)-1.125/exp(t7/365*y7)-1.125/exp(t8/365*y8)))/(t9/365)
+y10 <- log(100.75/(0.75/exp(t1/365*r10)+0.75/exp(t2/365*r10)+0.75/exp(t3/365*r10)+0.75/exp(t4/365*r10)+0.75/exp(t5/365*r10)+0.75/exp(t6/365*r10)+0.75/exp(t7/365*r10)+0.75/exp(t8/365*r10)+0.75/exp(t9/365*r10)+100.75/exp(t10/365*r10)-0.75/exp(t1/365*y1)-0.75/exp(t2/365*y1)-0.75/exp(t3/365*y1)-0.75/exp(t4/365*y1)-0.75/exp(t5/365*y1)-0.75/exp(t6/365*y1)-0.75/exp(t7/365*y1)-0.75/exp(t8/365*y1)-0.75/exp(t9/365*y1)))/(t10/365)
+spotcurve_0115 <- c(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10)
+spotcurve_0115
+```
+```{r}
+plot(type = "l", timetomature$date_diff/365, spotcurve_0102, ylab = "spotrate", xlab = "time/year", ylim = c(0.015, 0.027),col=1,main = "spot curve")
+lines(type = "l", (timetomature$date_diff-1)/365, spotcurve_0103,col=2)
+lines(type = "l", (timetomature$date_diff-4)/365, spotcurve_0106,col=3)
+lines(type = "l", (timetomature$date_diff-5)/365, spotcurve_0107,col=4)
+lines(type = "l", (timetomature$date_diff-6)/365, spotcurve_0108,col=5)
+lines(type = "l", (timetomature$date_diff-7)/365, spotcurve_0109,col=6)
+lines(type = "l", (timetomature$date_diff-8)/365, spotcurve_0110,col=7)
+lines(type = "l", (timetomature$date_diff-11)/365, spotcurve_0113,col=8)
+lines(type = "l", (timetomature$date_diff-12)/365, spotcurve_0114,col=9)
+lines(type = "l", (timetomature$date_diff-13)/365, spotcurve_0115,col=10)
+legend(3,0.027,legend = c("Jan02","Jan03","Jan06","Jan07","Jan08","Jan09","Jan10","Jan13","Jan14","Jan15"), col=1:10, lty = 1:10)
+```
+```{r}
+s1 <- spotcurve_0102[2]
+s2 <- spotcurve_0102[4]
+s3 <- spotcurve_0102[6]
+s4 <- spotcurve_0102[8]
+s5 <- spotcurve_0102[10]
+f1_1_0102 <- exp(2*s2)/exp(s1)
+f1_2_0102 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0102 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0102 <- (exp(5*s5)/exp(s1))^(1/4)
+f0102curve <- c( f1_1_0102, f1_2_0102, f1_3_0102, f1_4_0102) - 1
+f0102curve
+```
+
+```{r}
+s1 <- spotcurve_0103[2]
+s2 <- spotcurve_0103[4]
+s3 <- spotcurve_0103[6]
+s4 <- spotcurve_0103[8]
+s5 <- spotcurve_0103[10]
+f1_1_0103 <- exp(2*s2)/exp(s1)
+f1_2_0103 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0103 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0103 <- (exp(5*s5)/exp(s1))^(1/4)
+f0103curve <- c( f1_1_0103, f1_2_0103, f1_3_0103, f1_4_0103) - 1
+f0103curve
+```
+```{r}
+s1 <- spotcurve_0106[2]
+s2 <- spotcurve_0106[4]
+s3 <- spotcurve_0106[6]
+s4 <- spotcurve_0106[8]
+s5 <- spotcurve_0106[10]
+f1_1_0106 <- exp(2*s2)/exp(s1)
+f1_2_0106 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0106 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0106 <- (exp(5*s5)/exp(s1))^(1/4)
+f0106curve <- c( f1_1_0106, f1_2_0106, f1_3_0106, f1_4_0106) - 1
+f0106curve
+```
+```{r}
+s1 <- spotcurve_0107[2]
+s2 <- spotcurve_0107[4]
+s3 <- spotcurve_0107[6]
+s4 <- spotcurve_0107[8]
+s5 <- spotcurve_0107[10]
+f1_1_0107 <- exp(2*s2)/exp(s1)
+f1_2_0107 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0107 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0107 <- (exp(5*s5)/exp(s1))^(1/4)
+f0107curve <- c( f1_1_0107, f1_2_0107, f1_3_0107, f1_4_0107) - 1
+f0107curve
+```
+```{r}
+s1 <- spotcurve_0108[2]
+s2 <- spotcurve_0108[4]
+s3 <- spotcurve_0108[6]
+s4 <- spotcurve_0108[8]
+s5 <- spotcurve_0108[10]
+f1_1_0108 <- exp(2*s2)/exp(s1)
+f1_2_0108 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0108 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0108 <- (exp(5*s5)/exp(s1))^(1/4)
+f0108curve <- c( f1_1_0108, f1_2_0108, f1_3_0108, f1_4_0108) - 1
+f0108curve
+```
+```{r}
+s1 <- spotcurve_0109[2]
+s2 <- spotcurve_0109[4]
+s3 <- spotcurve_0109[6]
+s4 <- spotcurve_0109[8]
+s5 <- spotcurve_0109[10]
+f1_1_0109 <- exp(2*s2)/exp(s1)
+f1_2_0109 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0109 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0109 <- (exp(5*s5)/exp(s1))^(1/4)
+f0109curve <- c( f1_1_0109, f1_2_0109, f1_3_0109, f1_4_0109) - 1
+f0109curve
+```
+```{r}
+s1 <- spotcurve_0110[2]
+s2 <- spotcurve_0110[4]
+s3 <- spotcurve_0110[6]
+s4 <- spotcurve_0110[8]
+s5 <- spotcurve_0110[10]
+f1_1_0110 <- exp(2*s2)/exp(s1)
+f1_2_0110 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0110 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0110 <- (exp(5*s5)/exp(s1))^(1/4)
+f0110curve <- c( f1_1_0110, f1_2_0110, f1_3_0110, f1_4_0110) - 1
+f0110curve
+```
+```{r}
+s1 <- spotcurve_0113[2]
+s2 <- spotcurve_0113[4]
+s3 <- spotcurve_0113[6]
+s4 <- spotcurve_0113[8]
+s5 <- spotcurve_0113[10]
+f1_1_0113 <- exp(2*s2)/exp(s1)
+f1_2_0113 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0113 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0113 <- (exp(5*s5)/exp(s1))^(1/4)
+f0113curve <- c( f1_1_0113, f1_2_0113, f1_3_0113, f1_4_0113) - 1
+f0113curve
+```
+```{r}
+s1 <- spotcurve_0114[2]
+s2 <- spotcurve_0114[4]
+s3 <- spotcurve_0114[6]
+s4 <- spotcurve_0114[8]
+s5 <- spotcurve_0114[10]
+f1_1_0114 <- exp(2*s2)/exp(s1)
+f1_2_0114 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0114 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0114 <- (exp(5*s5)/exp(s1))^(1/4)
+f0114curve <- c( f1_1_0114, f1_2_0114, f1_3_0114, f1_4_0114) - 1
+f0114curve
+```
+```{r}
+s1 <- spotcurve_0115[2]
+s2 <- spotcurve_0115[4]
+s3 <- spotcurve_0115[6]
+s4 <- spotcurve_0115[8]
+s5 <- spotcurve_0115[10]
+f1_1_0115 <- exp(2*s2)/exp(s1)
+f1_2_0115 <- (exp(3*s3)/exp(s1))^(1/2)
+f1_3_0115 <- (exp(4*s4)/exp(s1))^(1/3)
+f1_4_0115 <- (exp(5*s5)/exp(s1))^(1/4)
+f0115curve <- c( f1_1_0115, f1_2_0115, f1_3_0115, f1_4_0115) - 1
+f0115curve
+```
+```{r}
+plot(type = "l", timetomature$date_diff/365, spotcurve_0102, ylab = "fowardrate", xlab = "time/year", ylim = c(0.014, 0.03),col=1, main = "forward curve")
+lines(type = "l", (timetomature$date_diff-1)/365, spotcurve_0103,col=2)
+lines(type = "l", (timetomature$date_diff-4)/365, spotcurve_0106,col=3)
+lines(type = "l", (timetomature$date_diff-5)/365, spotcurve_0107,col=4)
+lines(type = "l", (timetomature$date_diff-6)/365, spotcurve_0108,col=5)
+lines(type = "l", (timetomature$date_diff-7)/365, spotcurve_0109,col=6)
+lines(type = "l", (timetomature$date_diff-8)/365, spotcurve_0110,col=7)
+lines(type = "l", (timetomature$date_diff-11)/365, spotcurve_0113,col=8)
+lines(type = "l", (timetomature$date_diff-12)/365, spotcurve_0114,col=9)
+lines(type = "l", (timetomature$date_diff-13)/365, spotcurve_0115,col=10)
+legend(3,0.03,legend = c("Jan02","Jan03","Jan06","Jan07","Jan08","Jan09","Jan10","Jan13","Jan14","Jan15"), col=1:10, lty = 1:10)
+```
+```{r}
+X_1 <- NA
+r1_ts <- c(0.01867487,0.01841697,0.01855629,0.01875854,0.01865118,0.01869923,0.01874771,0.01905478,0.0189459,0.01851519)
+for (i in 1:9){
+  X_1[i] <- log(r1_ts[i+1]/r1_ts[i])
+}
+X_1
+```
+```{r}
+X_2 <- NA
+r2_ts <- c(0.0171587,0.0169291,0.01672966,0.01693055,0.0169464,0.0171484,0.01716467,0.01752619,0.01735545,0.01730954)
+for (i in 1:9){
+  X_2[i] <- log(r2_ts[i+1]/r2_ts[i])
+}
+X_2
+```
+```{r}
+X_3 <- NA
+r3_ts <- c(0.01668843,0.01642764,0.01626608,0.01637856,0.01640792,0.01664616,0.01688507,0.01680759,0.01662758,0.01661543)
+for (i in 1:9){
+  X_3[i] <- log(r3_ts[i+1]/r3_ts[i])
+}
+X_3
+```
+```{r}
+X_4 <- NA
+r4_ts <- c(0.01650335,0.01617349,0.01599547,0.01611693,0.01608765,0.01633034,0.01636168,0.01663817,0.01648759,0.01627608)
+for (i in 1:9){
+  X_4[i] <- log(r4_ts[i+1]/r4_ts[i])
+}
+X_4
+```
+```{r}
+X_5 <- NA
+r5_ts <- c(0.01779154,0.01727821,0.01652193,0.0169253,0.0166132,0.01719664,0.0171082,0.0170446,0.01720326,0.01695711)
+for (i in 1:9){
+  X_5[i] <- log(r5_ts[i+1]/r5_ts[i])
+}
+X_5
+```
+```{r}
+X_i_j <- t(matrix(c(X_1,X_2,X_3,X_4,X_5), ncol = 5))
+X_i_j
+```
+```{r}
+covX <- cov(t(X_i_j))
+covX
+```
+```{r}
+fmatrix <- matrix(c(f0102curve,f0103curve,f0106curve,f0107curve,f0108curve,f0109curve,f0110curve,f0113curve,f0114curve,f0115curve), ncol = 10)
+fmatrix
+```
+
+```{r}
+F_1_1 <- NA
+fm1 <- fmatrix[1,]
+for (i in 1:9){
+  F_1_1[i] <- log(fm1[i+1]/fm1[i])
+}
+
+F_1_2 <- NA
+fm2 <- fmatrix[2,]
+for (i in 1:9){
+  F_1_2[i] <- log(fm2[i+1]/fm2[i])
+}
+
+F_1_3 <- NA
+fm3 <- fmatrix[3,]
+for (i in 1:9){
+  F_1_3[i] <- log(fm3[i+1]/fm3[i])
+}
+
+F_1_4 <- NA
+fm4 <- fmatrix[4,]
+for (i in 1:9){
+  F_1_4[i] <- log(fm4[i+1]/fm4[i])
+}
+
+F_i_j <- t(matrix(c(F_1_1,F_1_2,F_1_3,F_1_4), ncol = 4))
+F_i_j
+```
+```{r}
+covF <- cov(t(F_i_j))
+covF
+```
+```{r}
+eigen(covX)
+eigen(covF)
+```
